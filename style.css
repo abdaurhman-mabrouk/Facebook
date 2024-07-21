@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {}
+
+body {}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+}
+
+nav span {
+  border: 1px solid black;
+}
+
+nav span.left {}
+
+nav span.center {}
+
+nav span.right {}
+
+main {
+  border: 1px solid black;
+}
