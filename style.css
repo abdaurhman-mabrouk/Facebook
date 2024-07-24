@@ -100,6 +100,10 @@ nav span.right input[type="text"] {
   background-color: #f0f2f5;
 }
 
+nav span.right input[type="text"]::placeholder {
+  font-style: italic;
+}
+
 img#facebookLogo {
   width: 42px;
   height: 42px;
