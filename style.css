@@ -136,7 +136,24 @@ main span.left {
 }
 
 main span.left div a {
+  margin-bottom: 10px;
   display: block;
+  border: 1px solid black;
+}
+
+main span.left div a img {
+  vertical-align: middle;
+}
+
+img#leftUserImage {
+  max-width: 50px;
+  max-height: 50px;
+  width: 33px;
+  height: 33px;
+  margin-left: 3px;
+  border-radius: 100%;
+  overflow: hidden;
+
 }
 
 span#showMoreSpan {
