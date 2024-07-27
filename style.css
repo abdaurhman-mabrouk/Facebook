@@ -146,8 +146,8 @@ main span.left div a img {
 }
 
 img#leftUserImage {
-  max-width: 50px;
-  max-height: 50px;
+  max-width: 33px;
+  max-height: 33px;
   width: 33px;
   height: 33px;
   margin-left: 3px;
@@ -157,8 +157,8 @@ img#leftUserImage {
 }
 
 span#showMoreSpan {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border: 1px solid black;
   border-radius: 100%;
 }
@@ -216,11 +216,38 @@ main span.right {
   scrollbar-width: none;
 }
 
+main span div h3 {
+  margin-left: 5px;
+}
+
 main span.right div a {
   margin-top: 5px;
   margin-left: 5px;
   display: block;
-  border: 1px solid black;
+  vertical-align: middle;
+}
+
+main span div a {
+  padding: 5px;
+}
+
+main span div a:hover {
+  background-color: #c9ccd1;
+}
+
+main span.right div a img {
+  vertical-align: middle;
+}
+
+img.userImg,
+img.groupImg {
+  border-radius: 100%;
+}
+
+main span div h3 img.right {
+  margin-left: 3px;
+  margin-right: 3px;
+  float: right;
 }
 
 div#addPost {
