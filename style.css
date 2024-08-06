@@ -92,6 +92,14 @@ nav span.center a:focus {
 
 nav span.right {}
 
+div#searchBarDiv {
+  width: 300px;
+  height: fit-content;
+  margin-right: 15px;
+  border-radius: 40px;
+  background-color: #f0f2f5;
+}
+
 nav span.right input[type="text"] {
   width: 230px;
   height: 45px;
@@ -104,6 +112,16 @@ nav span.right input[type="text"] {
 
 nav span.right input[type="text"]::placeholder {
   font-style: italic;
+}
+
+nav span.right input[type="text"]:focus {
+  outline: none;
+}
+
+svg#searchMark {
+  float: right;
+  margin-top: 15px;
+  margin-right: 15px;
 }
 
 img#facebookLogo {
