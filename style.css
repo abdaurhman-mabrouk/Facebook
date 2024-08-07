@@ -148,7 +148,6 @@ main span.left {
   max-height: 100%;
   width: 22%;
   height: 100%;
-  border: 1px solid black;
   overflow-x: scroll;
   scrollbar-width: none;
 }
@@ -200,11 +199,10 @@ div#storiesDiv {
   align-items: center;
   overflow-x: scroll;
   scrollbar-width: none;
-  border: 1px solid #000;
 }
 
 div.story {
-  width: 32%;
+  width: 25%;
   height: 95%;
   margin: 5px;
   border-radius: 5px;
@@ -291,7 +289,6 @@ div#reelsDiv {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  border: 1px solid #000;
 }
 
 div.reel {
@@ -308,7 +305,7 @@ div#feedDiv {
   height: 100%;
   margin-top: 20px;
   padding: 5px;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 
 div.post {
@@ -320,7 +317,6 @@ div.post {
 main span.right {
   width: 22%;
   height: 100%;
-  border: 1px solid black;
   overflow-x: scroll;
   scrollbar-width: none;
 }
