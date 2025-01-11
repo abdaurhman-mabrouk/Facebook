@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/images/facebookIcon.ico" type="image/x-icon" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Facebook</title>
+</head>
+
+<body>
+  <nav>
+    <span class="left">
+      <a href="#">
+        <img src="assets/images/facebookIcon.ico" alt="Facebook Logo" id="facebookLogo" />
+      </a>
+
+      <div id="searchBarDiv">
+        <input type="text" id="searchBar" placeholder="Search in Facebook" />
+        <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" id="searchMark">
+          <g fill-rule="evenodd" transform="translate(-448 -544)">
+            <g fill-rule="nonzero">
+              <path
+                d="M10.743 2.257a6 6 0 1 1-8.485 8.486 6 6 0 0 1 8.485-8.486zm-1.06 1.06a4.5 4.5 0 1 0-6.365 6.364 4.5 4.5 0 0 0 6.364-6.363z"
+                transform="translate(448 544)"></path>
+              <path
+                d="M10.39 8.75a2.94 2.94 0 0 0-.199.432c-.155.417-.23.849-.172 1.284.055.415.232.794.54 1.103a.75.75 0 0 0 1.112-1.004l-.051-.057a.39.39 0 0 1-.114-.24c-.021-.155.014-.356.09-.563.031-.081.06-.145.08-.182l.012-.022a.75.75 0 1 0-1.299-.752z"
+                transform="translate(448 544)"></path>
+              <path
+                d="M9.557 11.659c.038-.018.09-.04.15-.064.207-.077.408-.112.562-.092.08.01.143.034.198.077l.041.036a.75.75 0 0 0 1.06-1.06 1.881 1.881 0 0 0-1.103-.54c-.435-.058-.867.018-1.284.175-.189.07-.336.143-.433.2a.75.75 0 0 0 .624 1.356l.066-.027.12-.061z"
+                transform="translate(448 544)"></path>
+              <path
+                d="m13.463 15.142-.04-.044-3.574-4.192c-.599-.703.355-1.656 1.058-1.057l4.191 3.574.044.04c.058.059.122.137.182.24.249.425.249.96-.154 1.41l-.057.057c-.45.403-.986.403-1.411.154a1.182 1.182 0 0 1-.24-.182zm.617-.616.444-.444a.31.31 0 0 0-.063-.052c-.093-.055-.263-.055-.35.024l.208.232.207-.206.006.007-.22.257-.026-.024.033-.034.025.027-.257.22-.007-.007zm-.027-.415c-.078.088-.078.257-.023.35a.31.31 0 0 0 .051.063l.205-.204-.233-.209z"
+                transform="translate(448 544)"></path>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </span>
+
+    <span class="center">
+      <a href="#" id="navBarHomeLink" class="navbar-icon-link nav-bar-center-link">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"
+          class="x19dipnz x1lliihq x1tzjh5l x1k90msu x2h7rmj x1qfuztq" id="homeImage"
+          style="--color: var(--primary-button-background)">
+          <path
+            d="M9.464 1.286C10.294.803 11.092.5 12 .5c.908 0 1.707.303 2.537.786.795.462 1.7 1.142 2.815 1.977l2.232 1.675c1.391 1.042 2.359 1.766 2.888 2.826.53 1.059.53 2.268.528 4.006v4.3c0 1.355 0 2.471-.119 3.355-.124.928-.396 1.747-1.052 2.403-.657.657-1.476.928-2.404 1.053-.884.119-2 .119-3.354.119H7.93c-1.354 0-2.471 0-3.355-.119-.928-.125-1.747-.396-2.403-1.053-.656-.656-.928-1.475-1.053-2.403C1 18.541 1 17.425 1 16.07v-4.3c0-1.738-.002-2.947.528-4.006.53-1.06 1.497-1.784 2.888-2.826L6.65 3.263c1.114-.835 2.02-1.515 2.815-1.977zM10.5 13A1.5 1.5 0 0 0 9 14.5V21h6v-6.5a1.5 1.5 0 0 0-1.5-1.5h-3z">
+          </path>
+        </svg>
+      </a>
+
+      <a href="#" id="navBarWatchLink" class="navbar-icon-link nav-bar-center-link">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"
+          class="x19dipnz x1lliihq x1tzjh5l x1k90msu x2h7rmj x1qfuztq" id="reelsImage"
+          style="--color: var(--secondary-icon)">
+          <path d="M10.996 8.132A1 1 0 0 0 9.5 9v4a1 1 0 0 0 1.496.868l3.5-2a1 1 0 0 0 0-1.736l-3.5-2z"></path>
+          <path
+            d="M14.573 2H9.427c-1.824 0-3.293 0-4.45.155-1.2.162-2.21.507-3.013 1.31C1.162 4.266.817 5.277.655 6.477.5 7.634.5 9.103.5 10.927v.146c0 1.824 0 3.293.155 4.45.162 1.2.507 2.21 1.31 3.012.802.803 1.813 1.148 3.013 1.31C6.134 20 7.603 20 9.427 20h5.146c1.824 0 3.293 0 4.45-.155 1.2-.162 2.21-.507 3.012-1.31.803-.802 1.148-1.813 1.31-3.013.155-1.156.155-2.625.155-4.449v-.146c0-1.824 0-3.293-.155-4.45-.162-1.2-.507-2.21-1.31-3.013-.802-.802-1.813-1.147-3.013-1.309C17.866 2 16.397 2 14.573 2zM3.38 4.879c.369-.37.887-.61 1.865-.741C6.251 4.002 7.586 4 9.5 4h5c1.914 0 3.249.002 4.256.138.978.131 1.496.372 1.865.74.37.37.61.888.742 1.866.135 1.007.137 2.342.137 4.256 0 1.914-.002 3.249-.137 4.256-.132.978-.373 1.496-.742 1.865-.369.37-.887.61-1.865.742-1.007.135-2.342.137-4.256.137h-5c-1.914 0-3.249-.002-4.256-.137-.978-.132-1.496-.373-1.865-.742-.37-.369-.61-.887-.741-1.865C2.502 14.249 2.5 12.914 2.5 11c0-1.914.002-3.249.138-4.256.131-.978.372-1.496.74-1.865zM8 21.5a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2H8z">
+          </path>
+        </svg>
+      </a>
+
+      <a href="#" id="navBarMarketLink" class="navbar-icon-link nav-bar-center-link">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"
+          class="x19dipnz x1lliihq x1tzjh5l x1k90msu x2h7rmj x1qfuztq" id="storeImage"
+          style="--color: var(--secondary-icon)">
+          <path
+            d="M1.588 3.227A3.125 3.125 0 0 1 4.58 1h14.84c1.38 0 2.597.905 2.993 2.227l.816 2.719a6.47 6.47 0 0 1 .272 1.854A5.183 5.183 0 0 1 22 11.455v4.615c0 1.355 0 2.471-.119 3.355-.125.928-.396 1.747-1.053 2.403-.656.657-1.475.928-2.403 1.053-.884.12-2 .119-3.354.119H8.929c-1.354 0-2.47 0-3.354-.119-.928-.125-1.747-.396-2.403-1.053-.657-.656-.929-1.475-1.053-2.403-.12-.884-.119-2-.119-3.354V11.5l.001-.045A5.184 5.184 0 0 1 .5 7.8c0-.628.092-1.252.272-1.854l.816-2.719zM10 21h4v-3.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V21zm6-.002c.918-.005 1.608-.025 2.159-.099.706-.095 1.033-.262 1.255-.485.223-.222.39-.55.485-1.255.099-.735.101-1.716.101-3.159v-3.284a5.195 5.195 0 0 1-1.7.284 5.18 5.18 0 0 1-3.15-1.062A5.18 5.18 0 0 1 12 13a5.18 5.18 0 0 1-3.15-1.062A5.18 5.18 0 0 1 5.7 13a5.2 5.2 0 0 1-1.7-.284V16c0 1.442.002 2.424.1 3.159.096.706.263 1.033.486 1.255.222.223.55.39 1.255.485.551.074 1.24.094 2.159.1V17.5a2.5 2.5 0 0 1 2.5-2.5h3a2.5 2.5 0 0 1 2.5 2.5v3.498zM4.581 3c-.497 0-.935.326-1.078.802l-.815 2.72A4.45 4.45 0 0 0 2.5 7.8a3.2 3.2 0 0 0 5.6 2.117 1 1 0 0 1 1.5 0A3.19 3.19 0 0 0 12 11a3.19 3.19 0 0 0 2.4-1.083 1 1 0 0 1 1.5 0A3.2 3.2 0 0 0 21.5 7.8c0-.434-.063-.865-.188-1.28l-.816-2.72A1.125 1.125 0 0 0 19.42 3H4.58z">
+          </path>
+        </svg>
+      </a>
+
+      <a href="#" id="navBarGroupsLink" class="navbar-icon-link nav-bar-center-link">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"
+          class="x19dipnz x1lliihq x1tzjh5l x1k90msu x2h7rmj x1qfuztq" id="groupsImage"
+          style="--color: var(--secondary-icon)">
+          <path
+            d="M.5 12c0 6.351 5.149 11.5 11.5 11.5S23.5 18.351 23.5 12 18.351.5 12 .5.5 5.649.5 12zm2 0c0-.682.072-1.348.209-1.99a2 2 0 0 1 0 3.98A9.539 9.539 0 0 1 2.5 12zm.84-3.912A9.502 9.502 0 0 1 12 2.5a9.502 9.502 0 0 1 8.66 5.588 4.001 4.001 0 0 0 0 7.824 9.514 9.514 0 0 1-1.755 2.613A5.002 5.002 0 0 0 14 14.5h-4a5.002 5.002 0 0 0-4.905 4.025 9.515 9.515 0 0 1-1.755-2.613 4.001 4.001 0 0 0 0-7.824zM12 5a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm-2 4a2 2 0 1 0 4 0 2 2 0 0 0-4 0zm11.291 1.01a9.538 9.538 0 0 1 0 3.98 2 2 0 0 1 0-3.98zM16.99 20.087A9.455 9.455 0 0 1 12 21.5c-1.83 0-3.54-.517-4.99-1.414a1.004 1.004 0 0 1-.01-.148V19.5a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v.438a1 1 0 0 1-.01.148z">
+          </path>
+        </svg>
+      </a>
+
+      <a href="#" id="navBarGamingLink" class="navbar-icon-link nav-bar-center-link">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"
+          class="x19dipnz x1lliihq x1tzjh5l x1k90msu x2h7rmj x1qfuztq" id="gamesImage"
+          style="--color: var(--secondary-icon)">
+          <path
+            d="M8 8a1 1 0 0 1 1 1v2h2a1 1 0 1 1 0 2H9v2a1 1 0 1 1-2 0v-2H5a1 1 0 1 1 0-2h2V9a1 1 0 0 1 1-1zm8 2a1.5 1.5 0 1 0 3 0 1.5 1.5 0 0 0-3 0zm-2 4a1.5 1.5 0 1 0 3 0 1.5 1.5 0 0 0-3 0z">
+          </path>
+          <path
+            d="M.5 11a7 7 0 0 1 7-7h9a7 7 0 0 1 7 7v2a7 7 0 0 1-7 7h-9a7 7 0 0 1-7-7v-2zm7-5a5 5 0 0 0-5 5v2a5 5 0 0 0 5 5h9a5 5 0 0 0 5-5v-2a5 5 0 0 0-5-5h-9z">
+          </path>
+        </svg>
+      </a>
+    </span>
+
+    <span class="right">
+      <a href="#" class="navbar-icon-link">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"
+          class="x19dipnz x1lliihq x1tzjh5l x1k90msu x2h7rmj x1qfuztq" id="listImage"
+          style="--color: var(--primary-icon)">
+          <path
+            d="M18.5 1A1.5 1.5 0 0 0 17 2.5v3A1.5 1.5 0 0 0 18.5 7h3A1.5 1.5 0 0 0 23 5.5v-3A1.5 1.5 0 0 0 21.5 1h-3zm0 8a1.5 1.5 0 0 0-1.5 1.5v3a1.5 1.5 0 0 0 1.5 1.5h3a1.5 1.5 0 0 0 1.5-1.5v-3A1.5 1.5 0 0 0 21.5 9h-3zm-16 8A1.5 1.5 0 0 0 1 18.5v3A1.5 1.5 0 0 0 2.5 23h3A1.5 1.5 0 0 0 7 21.5v-3A1.5 1.5 0 0 0 5.5 17h-3zm8 0A1.5 1.5 0 0 0 9 18.5v3a1.5 1.5 0 0 0 1.5 1.5h3a1.5 1.5 0 0 0 1.5-1.5v-3a1.5 1.5 0 0 0-1.5-1.5h-3zm8 0a1.5 1.5 0 0 0-1.5 1.5v3a1.5 1.5 0 0 0 1.5 1.5h3a1.5 1.5 0 0 0 1.5-1.5v-3a1.5 1.5 0 0 0-1.5-1.5h-3zm-16-8A1.5 1.5 0 0 0 1 10.5v3A1.5 1.5 0 0 0 2.5 15h3A1.5 1.5 0 0 0 7 13.5v-3A1.5 1.5 0 0 0 5.5 9h-3zm0-8A1.5 1.5 0 0 0 1 2.5v3A1.5 1.5 0 0 0 2.5 7h3A1.5 1.5 0 0 0 7 5.5v-3A1.5 1.5 0 0 0 5.5 1h-3zm8 0A1.5 1.5 0 0 0 9 2.5v3A1.5 1.5 0 0 0 10.5 7h3A1.5 1.5 0 0 0 15 5.5v-3A1.5 1.5 0 0 0 13.5 1h-3zm0 8A1.5 1.5 0 0 0 9 10.5v3a1.5 1.5 0 0 0 1.5 1.5h3a1.5 1.5 0 0 0 1.5-1.5v-3A1.5 1.5 0 0 0 13.5 9h-3z">
+          </path>
+        </svg>
+      </a>
+
+      <a href="#" class="navbar-icon-link" id="messagesImageLink">
+        <svg viewBox="0 0 12 13" width="20" height="20" fill="currentColor"
+          class="x19dipnz x1lliihq x1tzjh5l x1k90msu x2h7rmj x1qfuztq" id="messagesImage"
+          style="--color: var(--primary-icon)">
+          <g fill-rule="evenodd" transform="translate(-450 -1073)">
+            <path
+              d="m459.603 1077.948-1.762 2.851a.89.89 0 0 1-1.302.245l-1.402-1.072a.354.354 0 0 0-.433.001l-1.893 1.465c-.253.196-.583-.112-.414-.386l1.763-2.851a.89.89 0 0 1 1.301-.245l1.402 1.072a.354.354 0 0 0 .434-.001l1.893-1.465c.253-.196.582.112.413.386M456 1073.5c-3.38 0-6 2.476-6 5.82 0 1.75.717 3.26 1.884 4.305.099.087.158.21.162.342l.032 1.067a.48.48 0 0 0 .674.425l1.191-.526a.473.473 0 0 1 .32-.024c.548.151 1.13.231 1.737.231 3.38 0 6-2.476 6-5.82 0-3.344-2.62-5.82-6-5.82">
+            </path>
+          </g>
+        </svg>
+      </a>
+      <!-- Messages Hidden Relative Div -->
+      <div id="messagesDiv" style="display: none"> <!-- Hidden Div -->
+        <div id="messagesHeader">
+          <span>Messages</span>
+          <a href="#">See All</a>
+        </div>
+        <div id="messagesBody">
+          <a href="#">
+            <img src="assets/images/user.png" class="userImg" />
+            <span>Message</span>
+          </a>
+
+          <a href="#">
+            <img src="assets/images/user.png" class="userImg" />
+            <span>Message</span>
+          </a>
+
+          <a href="#">
+            <img src="assets/images/user.png" class="userImg" />
+            <span>Message</span>
+          </a>
+
+          <a href="#">
+            <img src="assets/images/user.png" class="userImg" />
+            <span>Message</span>
+          </a>
+
+          <a href="#">
+            <img src="assets/images/user.png" class="userImg" />
+            <span>Message</span>
+          </a>
+        </div>
+      </div>
+
+      <a href="#" class="navbar-icon-link" id="notificationsImageLink">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"
+          class="x19dipnz x1lliihq x1tzjh5l x1k90msu x2h7rmj x1qfuztq" id="notificationsImage">
+          <path
+            d="M3 9.5a9 9 0 1 1 18 0v2.927c0 1.69.475 3.345 1.37 4.778a1.5 1.5 0 0 1-1.272 2.295h-4.625a4.5 4.5 0 0 1-8.946 0H2.902a1.5 1.5 0 0 1-1.272-2.295A9.01 9.01 0 0 0 3 12.43V9.5zm6.55 10a2.5 2.5 0 0 0 4.9 0h-4.9z">
+          </path>
+        </svg>
+      </a>
+      <!-- Notifications Hidden Relative Div -->
+      <div id="notificationsDiv" style="display: none"> <!-- Hidden Div -->
+        <div id="notificationsHeader">
+          <span>Notifications</span>
+          <a href="#">See All</a>
+        </div>
+        <div id="notificationsBody">
+          <a href="#">
+            <img src="assets/images/user.png" class="userImg" />
+            <span>Notification</span>
+          </a>
+          <a href="#">
+            <img src="assets/images/user.png" class="userImg" />
+            <span>Notification</span>
+          </a>
+          <a href="#">
+            <img src="assets/images/user.png" class="userImg" />
+            <span>Notification</span>
+          </a>
+          <a href="#">
+            <img src="assets/images/user.png" class="userImg" />
+            <span>Notification</span>
+          </a>
+          <a href="#">
+            <img src="assets/images/user.png" class="userImg" />
+            <span>Notification</span>
+          </a>
+        </div>
+      </div>
+
+      <a href="#" id="userImageLink" class="navbar-icon-link">
+        <img src="assets/images/user-menu.png" alt="User-Image" id="userImage" />
+      </a>
+      <!-- User Menu Hidden Relative Div -->
+      <div id="userMenuDiv" style="display: none"> <!-- Hidden Div -->
+        <div id="pageSwitcherDiv">
+          <a href="#" class="page-switcher-link">
+            <div>
+              <img src="assets/images/user.png" class="page-switcher-image userImg" />
+              Your Profile
+            </div>
+          </a>
+
+          <hr />
+
+          <a href="#" class="page-switcher-link">
+            <div>
+              <img src="assets/images/user.png" class="page-switcher-image userImg" />
+              Your Profile
+            </div>
+          </a>
+
+          <a href="#" class="page-switcher-link">
+            <div>
+              <img src="assets/images/user.png" class="page-switcher-image userImg" />
+              Your Profile
+            </div>
+          </a>
+
+          <hr />
+
+          <a href="#" id="showAllProfiles" class="page-switcher-link">
+            <i data-visualcompletion="css-img" class="x1b0d499 xep6ejk" aria-hidden="true"></i>
+            Show All The Personal Profiles
+          </a>
+        </div>
+
+        <div id="userMenuLinks">
+          <a href="#">
+            <img src="assets/images/settings-mark.png" />
+            Settings and Pravicy
+            <i data-visualcompletion="css-img" aria-hidden="true"
+              style="background-image: url('https://static.xx.fbcdn.net/rsrc.php/v4/y1/r/Y8kZSY8iBwN.png?_nc_eui2=AeHQJ2ve52vvXNI0EzYkUZY86WlMCfHoRYbpaUwJ8ehFhjMmjoXS0SgXGzThtYH9E2Y1eRUIbCwG7Kjnn_1SJZFz'); background-position: 0px -75px; background-size: auto; width: 24px; height: 24px; background-repeat: no-repeat; display: inline-block;">
+            </i>
+          </a>
+
+          <br>
+
+          <a href="#">
+            <img src="assets/images/question-mark.png" />
+            Help and Support
+            <i data-visualcompletion="css-img" aria-hidden="true"
+              style="background-image: url('https://static.xx.fbcdn.net/rsrc.php/v4/y1/r/Y8kZSY8iBwN.png?_nc_eui2=AeHQJ2ve52vvXNI0EzYkUZY86WlMCfHoRYbpaUwJ8ehFhjMmjoXS0SgXGzThtYH9E2Y1eRUIbCwG7Kjnn_1SJZFz'); background-position: 0px -75px; background-size: auto; width: 24px; height: 24px; background-repeat: no-repeat; display: inline-block;">
+            </i>
+          </a>
+
+          <br>
+
+          <a href="#">
+            <img src="assets/images/dark-mood-mark.png" />
+            Display &amp; Accessibility
+            <i data-visualcompletion="css-img" aria-hidden="true"
+              style="background-image: url('https://static.xx.fbcdn.net/rsrc.php/v4/y1/r/Y8kZSY8iBwN.png?_nc_eui2=AeHQJ2ve52vvXNI0EzYkUZY86WlMCfHoRYbpaUwJ8ehFhjMmjoXS0SgXGzThtYH9E2Y1eRUIbCwG7Kjnn_1SJZFz'); background-position: 0px -75px; background-size: auto; width: 24px; height: 24px; background-repeat: no-repeat; display: inline-block;">
+            </i>
+          </a>
+
+          <br>
+
+          <a href="#">
+            <img src="assets/images/feedback-mark.png" alt="Feedback Mark">
+            Give feedback
+          </a>
+
+          <br>
+
+          <a href="#">
+            <img src="assets/images/logout-mark.png" alt="Logout Mark">
+            Logout
+          </a>
+        </div>
+      </div>
+    </span>
+  </nav>
+
+  <main id="home">
+    <span class="left">
+      <div>
+        <a href="#" class="userLink">
+          <img src="assets/images/user.png" id="leftUserImage" class="userImage" />
+          Your Profile
+        </a>
+
+        <a href="#">
+          <img src="assets/images/colored-friends-mark.png" /> Friends
+        </a>
+
+        <a href="#">
+          <img src="assets/images/colored-statistics-mark.png" />
+          Professional Dashboard
+        </a>
+
+        <a href="#">
+          <img src="assets/images/colored-timeline-mark.png" />
+          Feed
+        </a>
+
+        <a href="#">
+          <img src="assets/images/colored-groups-mark.png" />
+          Groups
+        </a>
+
+        <a href="#">
+          <img src="assets/images/colored-marketplace-mark.png" />
+          MarketPlace
+        </a>
+
+        <a href="#">
+          <img src="assets/images/colored-videos-mark.png" />
+          Videos
+        </a>
+
+        <a href="#">
+          <img src="assets/images/colored-history-mark.png" />
+          Memories
+        </a>
+
+        <a href="#">
+          <img src="assets/images/colored-save-mark.png" />
+          Saved
+        </a>
+
+        <a href="#">
+          <span id="showMoreSpan">
+            <svg viewBox="0 0 16 16" width="20" height="20" fill="currentColor" aria-hidden="true">
+              <g fill-rule="evenodd" transform="translate(-448 -544)">
+                <path fill-rule="nonzero"
+                  d="M452.707 549.293a1 1 0 0 0-1.414 1.414l4 4a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0-1.414-1.414L456 552.586l-3.293-3.293z">
+                </path>
+              </g>
+            </svg>
+          </span>
+          Show More
+        </a>
+
+        <hr />
+
+        <div>
+          <h3>Your Shortcuts</h3>
+
+          <a href="#" class="userLink">
+            <img src="assets/images/user.png" class="userImg" /> Page
+          </a>
+        </div>
+      </div>
+
+      <div>Left Section Footer</div>
+    </span>
+
+    <span class="center">
+      <div id="storiesDiv">
+        <div class="story">
+          <center>Story</center>
+        </div>
+
+        <div class="story">
+          <center>Story</center>
+        </div>
+
+        <div class="story">
+          <center>Story</center>
+        </div>
+
+        <div class="story">
+          <center>Story</center>
+        </div>
+      </div>
+
+      <div id="createPostDiv">
+        <div id="createPostTextDiv">
+          <img src="assets/images/user.png" />
+          <input type="text" placeholder="What's in Your Mind ?" />
+        </div>
+
+        <hr />
+
+        <div id="createPostAttachmentsDiv">
+          <a href="#">
+            <img src="assets/images/colored-video-mark.png" />
+          </a>
+
+          <a href="#">
+            <img src="assets/images/images-mark.png" />
+          </a>
+
+          <a href="#">
+            <img src="assets/images/colored-live-viedo-mark.png" />
+          </a>
+        </div>
+      </div>
+
+      <div id="reelsDiv">
+        <div class="reel">
+          <center>Reel</center>
+        </div>
+
+        <div class="reel">
+          <center>Reel</center>
+        </div>
+
+        <div class="reel">
+          <center>Reel</center>
+        </div>
+      </div>
+
+      <div id="feedDiv">
+        <div class="post">
+          <div class="post-details">
+            <img src="assets/images/user.png" alt="User-Image" class="post-user-image">
+            <span>
+              <div><a href="#">Publisher Name</a></div>
+              <div><a href="#">Post / Date </a>.
+                <a href="#">
+                  <svg viewBox="0 0 16 16" width="12" height="12" fill="currentColor" title="Shared with Custom">
+                    <title>Shared with Custom</title>
+                    <g fill-rule="evenodd" transform="translate(-448 -544)">
+                      <path
+                        d="M459.75 551c-1.24 0-2.25-1.121-2.25-2.5 0-1.542.863-2.5 2.25-2.5s2.25.958 2.25 2.5c0 1.379-1.01 2.5-2.25 2.5m.692 1h-1.384c-.105 0-.21.005-.312.014a.3.3 0 0 0-.186.509 5.03 5.03 0 0 1 1.44 3.53v1.147a.3.3 0 0 0 .3.3h2.015c.929 0 1.685-.756 1.685-1.685v-.257a3.562 3.562 0 0 0-3.558-3.558m-3.032 6.5h-7.82c-.877 0-1.59-.714-1.59-1.59v-.857a4.057 4.057 0 0 1 4.053-4.053h2.894a4.057 4.057 0 0 1 4.053 4.053v.856c0 .877-.713 1.591-1.59 1.591m-3.91-7.5c-1.379 0-2.5-1.346-2.5-3 0-1.879.935-3 2.5-3s2.5 1.121 2.5 3c0 1.654-1.121 3-2.5 3">
+                      </path>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </span>
+
+            <span class="post-control">
+              <a href="#">
+                <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor">
+                  <g fill-rule="evenodd" transform="translate(-446 -350)">
+                    <path
+                      d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0">
+                    </path>
+                  </g>
+                </svg>
+              </a>
+
+              <a href="#">
+                <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor">
+                  <path
+                    d="M15.543 3.043a1 1 0 1 1 1.414 1.414L11.414 10l5.543 5.542a1 1 0 0 1-1.414 1.415L10 11.414l-5.543 5.543a1 1 0 0 1-1.414-1.415L8.586 10 3.043 4.457a1 1 0 1 1 1.414-1.414L10 8.586l5.543-5.543z">
+                  </path>
+                </svg>
+              </a>
+            </span>
+          </div>
+
+          <div class="post-description">
+            The Text Area of The Post Description.
+          </div>
+
+          <div class="post-image">
+            <img src="#" alt="Post-Image" class="post-image">
+          </div>
+
+          <div class="post-statics">
+            <span class="post-statics-left">
+              <img class="x16dsc37" height="18" role="presentation" width="18"
+                src="data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cg clip-path='url(%23clip0_15251_63610)'%3E%3Cpath d='M15.9963 8c0 4.4179-3.5811 7.9993-7.9986 7.9993-4.4176 0-7.9987-3.5814-7.9987-7.9992 0-4.4179 3.5811-7.9992 7.9987-7.9992 4.4175 0 7.9986 3.5813 7.9986 7.9992Z' fill='url(%23paint0_linear_15251_63610)'/%3E%3Cpath d='M15.9973 7.9992c0 4.4178-3.5811 7.9992-7.9987 7.9992C3.5811 15.9984 0 12.417 0 7.9992S3.5811 0 7.9986 0c4.4176 0 7.9987 3.5814 7.9987 7.9992Z' fill='url(%23paint1_radial_15251_63610)'/%3E%3Cpath d='M7.9996 5.9081c-.3528-.8845-1.1936-1.507-2.1748-1.507-1.4323 0-2.4254 1.328-2.4254 2.6797 0 2.2718 2.3938 4.0094 4.0816 5.1589.3168.2157.7205.2157 1.0373 0 1.6878-1.1495 4.0815-2.8871 4.0815-5.159 0-1.3517-.993-2.6796-2.4254-2.6796-.9811 0-1.822.6225-2.1748 1.507Z' fill='%23fff'/%3E%3C/g%3E%3Cdefs%3E%3CradialGradient id='paint1_radial_15251_63610' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='matrix(0 7.9992 -7.99863 0 7.9986 7.9992)'%3E%3Cstop offset='.5637' stop-color='%23E11731' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23E11731' stop-opacity='.1'/%3E%3C/radialGradient%3E%3ClinearGradient id='paint0_linear_15251_63610' x1='2.3986' y1='2.4007' x2='13.5975' y2='13.5993' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF74AE'/%3E%3Cstop offset='.5001' stop-color='%23FA2E3E'/%3E%3Cstop offset='1' stop-color='%23FF5758'/%3E%3C/linearGradient%3E%3CclipPath id='clip0_15251_63610'%3E%3Cpath fill='%23fff' d='M-.001.0009h15.9992v15.9984H-.001z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E">
+            </span>
+
+            <span class="post-statics-right">
+              <a href="#">1 Comment</a>
+              <a href="#">1 Share</a>
+            </span>
+          </div>
+
+          <hr>
+
+          <div class="post-reacts">
+            <a href="#">
+              <i data-visualcompletion="css-img"
+                style="background-image: url('https://static.xx.fbcdn.net/rsrc.php/v4/y4/r/xAljGE-8t8Y.png?_nc_eui2=AeEkDYcN4q1wOEgt48oyGxiwYHlezEfsCP5geV7MR-wI_gJTaDCuRNWBcC6hDf9dFIR3e9dVOGlF6cFTXxFrYF1D'); background-position: 0px -798px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;">
+              </i>
+              Like
+            </a>
+
+            <a href="#">
+              <i data-visualcompletion="css-img"
+                style="background-image: url('https://static.xx.fbcdn.net/rsrc.php/v4/y4/r/xAljGE-8t8Y.png?_nc_eui2=AeEkDYcN4q1wOEgt48oyGxiwYHlezEfsCP5geV7MR-wI_gJTaDCuRNWBcC6hDf9dFIR3e9dVOGlF6cFTXxFrYF1D'); background-position: 0px -588px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;">
+              </i>
+              Comment
+            </a>
+
+            <a href="#">
+              <i data-visualcompletion="css-img"
+                style="background-image: url('https://static.xx.fbcdn.net/rsrc.php/v4/y4/r/xAljGE-8t8Y.png?_nc_eui2=AeEkDYcN4q1wOEgt48oyGxiwYHlezEfsCP5geV7MR-wI_gJTaDCuRNWBcC6hDf9dFIR3e9dVOGlF6cFTXxFrYF1D'); background-position: 0px -588px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;">
+              </i>
+              Send
+            </a>
+
+            <a href="#">
+              <i data-visualcompletion="css-img"
+                style="background-image: url('https://static.xx.fbcdn.net/rsrc.php/v4/y4/r/xAljGE-8t8Y.png?_nc_eui2=AeEkDYcN4q1wOEgt48oyGxiwYHlezEfsCP5geV7MR-wI_gJTaDCuRNWBcC6hDf9dFIR3e9dVOGlF6cFTXxFrYF1D'); background-position: 0px -924px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;">
+              </i>
+              Share
+            </a>
+          </div>
+        </div>
+      </div>
+    </span>
+
+    <span class="right">
+      <div>
+        <h3>
+          Your Pages and Your Profiles
+          <img src="assets/images/menu-mark.png" class="right" />
+        </h3>
+
+        <a href="#" class="userLink">
+          <img src="assets\images\user.png" class="userImg" /> Your Profile
+        </a>
+
+        <a href="#">
+          <img src="assets\images\switch-user.png" /> Switch To Page
+        </a>
+
+        <a href="#">
+          <img src="assets\images\sponsor-mark.png" /> Create Sponsor
+        </a>
+      </div>
+
+      <hr />
+
+      <div id="birthdaysDiv">
+        <h3>Birthdays</h3>
+        <a href="#"><img src="assets/images/gift-mark.png" /> Today's User Birthday
+        </a>
+      </div>
+
+      <hr />
+
+      <div id="contactsDiv">
+        <h3>
+          Contacts
+          <img src="assets/images/dark-search-mark.png" class="right" />
+          <img src="assets/images/menu-mark.png" class="right" />
+        </h3>
+
+        <a href="#" class="userLink">
+          <img src="assets/images/user.png" class="userImg" />
+          <span>User</span>
+        </a>
+
+        <a href="#" class="userLink">
+          <img src="assets/images/user.png" class="userImg" />
+          <span>User</span>
+        </a>
+
+        <a href="#" class="userLink">
+          <img src="assets/images/user.png" class="userImg" />
+          <span>User</span>
+        </a>
+
+        <a href="#" class="userLink">
+          <img src="assets/images/user.png" class="userImg" />
+          <span>User</span>
+        </a>
+
+        <a href="#" class="userLink">
+          <img src="assets/images/user.png" class="userImg" />
+          <span>User</span>
+        </a>
+
+        <a href="#" class="userLink">
+          <img src="assets/images/user.png" class="userImg" />
+          <span>User</span>
+        </a>
+
+        <a href="#" class="userLink">
+          <img src="assets/images/user.png" class="userImg" />
+          <span>User</span>
+        </a>
+      </div>
+
+      <hr />
+
+      <div>
+        <h3>Groups Conversations</h3>
+
+        <a href="#" class="groupLink">
+          <img src="assets/images/user.png" class="groupImg" /> Group
+        </a>
+
+        <a href="#" class="groupLink">
+          <img src="assets/images/user.png" class="groupImg" /> Group
+        </a>
+
+        <a href="#" class="groupLink">
+          <img src="assets/images/user.png" class="groupImg" /> Group
+        </a>
+
+        <a href="#">
+          <img src="assets/images/add-mark.png" /> Create New Group
+        </a>
+      </div>
+    </span>
+
+    <!-- unRelative Content -->
+    <div id="addPost">
+      <a href="#">
+        <img src="assets/images/create-post-mark.png" />
+      </a>
+    </div>
+  </main>
+
+  <main id="watch" style="display: none"> <!-- Hidden Section -->
+    <span class="left">
+    </span>
+    <span class="right">
+      <div>
+        <center>Watch Div</center>
+      </div>
+    </span>
+  </main>
+
+  <main id="market" style="display: none"> <!-- Hidden Section -->
+    <span class="left">
+    </span>
+    <span class="right">
+      <div>
+        <center>Market Div</center>
+      </div>
+    </span>
+  </main>
+
+  <main id="groups" style="display: none"> <!-- Hidden Section -->
+    <span class="left">
+    </span>
+    <span class="right">
+      <div>
+        <center>Groups Div</center>
+      </div>
+    </span>
+  </main>
+
+  <main id="gaming" style="display: none"> <!-- Hidden Section -->
+    <span class="left">
+    </span>
+    <span class="right">
+      <div>
+        <center>Gaming Div</center>
+      </div>
+    </span>
+  </main>
+</body>
+<!-- External JavaScript -->
+<script src="main.js"></script>
+<script src="assets/scripts/nav.js"></script>
+
+</html>

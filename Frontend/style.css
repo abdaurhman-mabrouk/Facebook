@@ -1,0 +1,788 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: unset;
+}
+
+body {
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav {
+  max-width: 100%;
+  max-height: 50px;
+  width: 100vw;
+  height: 50px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: middle;
+}
+
+nav span {
+  max-height: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+nav span a {
+  vertical-align: middle;
+}
+
+nav span.right {
+}
+
+nav span.right a.navbar-icon-link {
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e4e6eb;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+div#userMenuDiv {
+  position: absolute;
+  top: 50px;
+  right: 25px;
+  min-width: 360px;
+  max-width: 360px;
+  min-height: 580px;
+  max-height: 580px;
+  display: none;
+  background-color: #fff;
+  border-radius: 12px;
+  /* border: 1px solid #000; */
+  /* box-shadow: 0px 0px 3px 1px #000; */
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+div#pageSwitcherDiv {
+  min-width: 92%;
+  max-width: 92%;
+  height: fit-content;
+  margin: 3% auto;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid #000;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+a.page-switcher-link {
+  display: inline-block;
+  width: 92%;
+  height: fit-content;
+  margin: 2px auto;
+  padding: 1px;
+  text-align: left;
+  border: 1px solid #000;
+}
+
+a.page-switcher-link:hover {
+  background-color: #e4e6eb;
+}
+
+a.page-switcher-link#showAllProfiles {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 5px 0;
+  border-radius: 7px;
+  background-color: #e4e6eb;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+a.page-switcher-link#showAllProfiles i {
+  background-image: url('https://static.xx.fbcdn.net/rsrc.php/v4/yT/r/XjnAqEDt36c.png?_nc_eui2=AeFV5-0UUNhJgmjhel54OxaAsSkqQ-oXvMOxKSpD6he8wwuUm_R6C6CYrf_hfm_E4uBYjnaggcy1lkxUteCtlvc6');
+  background-position: 0px -361px;
+  background-size: auto;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+a.page-switcher-link div {
+}
+
+a.page-switcher-link div * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+div#userMenuLinks {
+  min-width: 92%;
+  max-width: 92%;
+  width: 92%;
+  height: 300px;
+  margin: 10px auto;
+  padding: 5px 0px 5px 10px;
+  border: 1px solid #000;
+}
+
+div#userMenuLinks a {
+  justify-content: left;
+  min-width: 100%;
+  min-height: 120px;
+  font-size: 20px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  padding: 1px;
+  border: 1px solid #000;
+}
+
+div#userMenuLinks a:hover {
+  background-color: #c9ccd1;
+}
+
+div#userMenuLinks a * {
+  vertical-align: middle;
+}
+
+div#userMenuLinks a img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  outline: 8px solid #c9ccd1;
+  border-radius: 100%;
+  background-color: #c9ccd1;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+a#userImageLink {
+  padding: 0;
+}
+
+div#notificationsDiv {
+  position: absolute;
+  top: 50px;
+  right: 25px;
+  width: 330px;
+  height: 450px;
+  padding-left: 10px;
+  display: none;
+  background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid #000;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+div#messagesDiv {
+  position: absolute;
+  top: 50px;
+  right: 25px;
+  width: 330px;
+  height: 600px;
+  padding-left: 10px;
+  display: none;
+  background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid #000;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+nav span.center {
+  max-width: 40%;
+  width: 40%;
+  margin-right: 100px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav span.center a {
+  height: 90%;
+  width: 16%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+nav span.center a:hover {
+  background-color: #f0f2f5;
+}
+
+nav span.center a:focus {
+  border-bottom: 4px solid #0866ff;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  color: #0866ff;
+}
+
+nav span.center a:focus svg {
+  /* color: #0866ff; */
+}
+
+nav span.left {
+}
+
+div#searchBarDiv {
+  width: 240px;
+  height: 80%;
+  margin-left: 15px;
+  padding: 0;
+  border-radius: 40px;
+  background-color: #f0f2f5;
+}
+
+nav span.left input[type='text'] {
+  width: 200px;
+  height: 100%;
+  margin-left: 1px;
+  padding: 5px 10px;
+  vertical-align: middle;
+  border: none;
+  border-radius: 30px;
+  background-color: #f0f2f5;
+}
+
+nav span.left input[type='text']::placeholder {
+  /* font-style: italic; */
+}
+
+nav span.left input[type='text']:focus {
+  outline: none;
+}
+
+svg#searchMark {
+  /* float: right; */
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  vertical-align: middle;
+  color: #65686c;
+  /* border: 1px solid #000; */
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+img#facebookLogo {
+  width: 39px;
+  height: 39px;
+}
+
+main#home {
+  min-width: 100%;
+  min-height: 93vh;
+  max-width: 100vw;
+  max-height: 93vh;
+  width: 100vw;
+  height: 93vh;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f2f5;
+}
+
+main#home span.left {
+  max-width: 20%;
+  max-height: 100%;
+  width: 20%;
+  height: 100%;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+main#home span.left div a {
+  margin-left: 8px;
+  margin-bottom: 10px;
+  display: block;
+  font-weight: 900;
+}
+
+main#home span.left div a img {
+  vertical-align: middle;
+}
+
+img#leftUserImage {
+  max-width: 33px;
+  max-height: 33px;
+  width: 33px;
+  height: 33px;
+  margin-left: 3px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+span#showMoreSpan {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  /* padding: 0px;
+  margin: 0; */
+  text-align: center;
+  align-content: center;
+  background-color: #d6d9dd;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+span#showMoreSpan svg {
+  /* width: 20px;
+  height: 20px; */
+  margin: auto;
+  vertical-align: middle;
+  border-radius: 100%;
+}
+
+main#home span.center {
+  width: 37%;
+  height: 100%;
+  padding: 5px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+div#storiesDiv {
+  min-width: 100%;
+  min-height: 35%;
+  width: 100%;
+  height: 35%;
+  max-width: 100%;
+  max-height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+div.story {
+  width: 23%;
+  height: 100%;
+  margin: 0 3px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+div#createPostDiv {
+  min-width: 100%;
+  max-width: 100%;
+  width: 100%;
+  height: 17vh;
+  min-height: 17vh;
+  max-height: 17%;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  background-color: #fff;
+  /* border: 1px solid #000; */
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+div#createPostTextDiv {
+  min-width: 100%;
+  min-height: 50%;
+  width: 100%;
+  height: 50%;
+  max-width: 100%;
+  max-height: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  vertical-align: bottom;
+}
+
+div#createPostTextDiv input {
+  width: 85%;
+  height: 70%;
+  margin: 0;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #e4e6e8;
+  border: none;
+}
+
+div#createPostTextDiv input:focus {
+  border: none;
+  outline: 1px solid #c9ccd1;
+  font-size: 20px;
+}
+
+div#createPostTextDiv input::placeholder {
+  font-style: normal;
+  font-size: 16px;
+}
+
+div#createPostDiv hr {
+  width: 95%;
+  height: 1px;
+  margin: auto;
+  background-color: #e2e5e9;
+}
+
+div#createPostTextDiv img {
+  border-radius: 100%;
+}
+
+div#createPostAttachmentsDiv {
+  min-width: 100%;
+  min-height: 50%;
+  width: 100%;
+  height: 50%;
+  max-width: 100%;
+  max-height: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+div#createPostAttachmentsDiv a {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+div#createPostAttachmentsDiv img {
+  margin: auto;
+}
+
+div#reelsDiv {
+  width: 100%;
+  height: 40vh;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+div.reel {
+  width: 32%;
+  height: 95%;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: #fff;
+}
+
+div#feedDiv {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  padding: 5px;
+  /* border: 1px solid #000; */
+}
+
+div.post {
+  min-width: 100%;
+  min-height: fit-content;
+  width: 100%;
+  height: fit-content;
+  max-width: 100%;
+  max-height: fit-content;
+  padding: 0;
+  margin: 10px auto;
+  /* border: 1px solid #000; */
+  border-radius: 15px;
+}
+
+div.post a:hover {
+  background-color: unset !important;
+  text-decoration: underline;
+}
+
+div.post-details {
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color: #fff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+div.post div.post-details img {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 100%;
+}
+
+div.post-details span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+div.post-details span.post-control {
+  float: right;
+  padding-right: 10px;
+}
+
+div.post-details span.post-control a {
+  width: 25px !important;
+  height: 25px !important;
+  border-radius: 100% !important;
+  align-content: center !important;
+  align-items: center !important;
+  vertical-align: middle !important;
+}
+
+div.post-details span.post-control a:hover {
+  background-color: #c9ccd1 !important;
+}
+
+div.post-details span.post-control a svg {
+  vertical-align: middle;
+}
+
+div.post-details span div a {
+  /* color: #74777a; */
+}
+
+div.post-details span div a:hover {
+  background-color: unset !important;
+  text-decoration: underline;
+}
+
+div.post-description {
+  padding: 10px 10px;
+  background-color: #fff;
+}
+
+div.post-description a:hover {
+  background-color: unset !important;
+  text-decoration: underline;
+}
+
+div.post-statics {
+  padding: 5px 10px;
+  background-color: #fff;
+}
+
+div.post-statics span.post-statics-right {
+  float: right;
+}
+
+div.post hr {
+  width: 95%;
+  margin: auto;
+}
+
+div.post-reacts {
+  min-width: 100%;
+  min-height: 40px;
+  width: 100%;
+  height: 40px;
+  max-width: 100%;
+  max-height: 40px;
+  padding: 0px 10px;
+  align-content: center;
+  background-color: #fff;
+  justify-content: space-evenly !important;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+div.post-reacts a {
+  padding: 10px 35px !important;
+  margin: 1px 0 !important;
+  vertical-align: middle !important;
+}
+
+div.post-reacts a:hover {
+  background-color: #f2f2f2 !important;
+}
+
+div.post-reacts a i {
+  vertical-align: middle !important;
+}
+
+main#home span.right {
+  width: 20%;
+  height: 100%;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+main#home span div h3 {
+  margin-left: 5px;
+}
+
+main#home span.right div a {
+  margin-top: 5px;
+  margin-left: 5px;
+  display: block;
+  /* vertical-align: middle; */
+}
+
+main#home span div a {
+  padding: 5px;
+}
+
+main#home span div a:hover {
+  background-color: #c9ccd1;
+}
+
+main#home span.right div a img {
+  vertical-align: middle;
+}
+
+main#home span.right div#contactsDiv {
+}
+
+img.userImg,
+img.groupImg {
+  border-radius: 100%;
+}
+
+main#home span div h3 img.right {
+  margin-left: 3px;
+  margin-right: 3px;
+  float: right;
+}
+
+div#addPost {
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 50px;
+  max-height: 50px;
+  padding: 5px;
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 100%;
+}
+
+div#addPost a {
+  max-width: fit-content;
+  max-height: fit-content;
+  margin: 0 auto -4px auto;
+  padding: 0;
+}
+
+div#addPost a img {
+  margin: 0;
+  padding: 0;
+}
+
+/*===========================
+=          RWD Code         =
+===========================*/
+
+/* When ViewPort == 1100px */
+@media only screen and (max-width: 1100px) {
+  main#home {
+    justify-content: space-between;
+  }
+
+  main#home span.right {
+    display: none;
+  }
+
+  main#home span.center {
+    width: 60%;
+  }
+
+  main#home span.left {
+    max-width: 25%;
+    width: 25%;
+  }
+}
+
+/*When ViewPort == 1260px */
+@media only screen and (max-width: 1260px) {
+  nav span.left img#facebookLogo {
+    width: 40px;
+    height: 40px;
+  }
+
+  nav span.left div#searchBarDiv {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    align-content: center;
+    text-align: center;
+    /* vertical-align: middle; */
+  }
+
+  nav span.left input#searchBar {
+    display: none;
+  }
+
+  nav span.left div svg#searchMark {
+    vertical-align: middle;
+    /* margin: auto; */
+  }
+}
+
+/* When ViewPort == 900*/
+@media only screen and (max-width: 900px) {
+  main#home {
+    justify-content: center;
+  }
+  main#home span.left {
+    display: none;
+  }
+  main#home span.center {
+    width: 60%;
+  }
+}
+
+/* When ViewPort == 700px*/
+@media only screen and (max-width: 700px) {
+  nav span.center {
+    display: none;
+  }
+}
+
+/* When ViewPort == 500px*/
+@media only screen and (max-width: 500px) {
+  main#home span.center {
+    width: 100%;
+  }
+}
